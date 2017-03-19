@@ -1,5 +1,6 @@
 
 app.controller("EmployeeCtrl", function ($scope, $http) {
+    
     function init() {
         $scope.employees = [];
         $scope.setEmployeeDefault();
