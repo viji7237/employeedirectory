@@ -36,7 +36,7 @@ app.controller("EmployeeCtrl", function ($scope, $http) {
     
     $scope.create = function (employee) {
         $http({
-            url: "http://localhost:3000/api/employee/create",
+            url: "api/employee/create",
             method: 'POST',
             data: JSON.stringify(employee)
         }).then(function (employee) {
@@ -50,7 +50,7 @@ app.controller("EmployeeCtrl", function ($scope, $http) {
     
     $scope.update = function (employee) {
         $http({
-            url: "http://localhost:3000/api/employee/update",
+            url: "api/employee/update",
             method: 'POST',
             data: JSON.stringify(employee)
         }).then(function (employee) {
@@ -63,7 +63,7 @@ app.controller("EmployeeCtrl", function ($scope, $http) {
     $scope.readAll = function () {
         $http({
             method: 'GET',
-            url: 'http://localhost:3000/api/employee'
+            url: "api/employee"
         })
         .then(function (result) {
             $scope.employees = result.data;
@@ -96,7 +96,7 @@ app.controller("EmployeeCtrl", function ($scope, $http) {
         if (confirm("Are you sure want to delete this employee record??")) {
             $http({
                 method: 'GET',
-                url: 'http://localhost:3000/api/employee/delete/' + id
+                url: "api/employee/delete/" + id
             }).then(function (result) {
                 $scope.err = result.data;
                 $scope.employees = $scope.employees.filter(function (data) {

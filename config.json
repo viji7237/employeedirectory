@@ -1,3 +1,4 @@
-﻿{  
-  "db_url": "mongodb://empuser:emp@ds137040.mlab.com:37040/epmloyeedirectory"
+﻿{
+  "db_url": "mongodb://empuser:emp@ds137040.mlab.com:37040/epmloyeedirectory",
+  "domain": "http://localhost:3000"
 }
