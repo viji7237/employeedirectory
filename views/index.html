@@ -41,7 +41,7 @@
                             <input type="email" ng-required="true" ng-model="employee.email" required="" class="form-control ng-pristine ng-untouched ng-valid-email ng-invalid ng-invalid-required" placeholder="abc@xyz.com">
                         </td>
                         <td>
-                            <input type="date" ng-required="true" ng-model="employee.dob" ng-blur="defineEmployeeAge(employee.dob, employee)" id="datepicker" class="form-control hasDatepicker ng-pristine ng-invalid ng-invalid-required ng-touched" required="" placeholder="MM/DD/YYYY" max="2000-12-31" data-tip="Minum">
+                            <input type="date" ng-required="true" ng-model="employee.dob" ng-blur="defineEmployeeAge(employee.dob, employee)" id="datepicker" class="form-control hasDatepicker ng-pristine ng-invalid ng-invalid-required ng-touched" required="" placeholder="MM/DD/YYYY" max="2000-12-31" title="Date of birth shouldn't be greater than 12/31/2000">
                         </td>
                         <td>
                             <input ng-model="employee.department" ng-required="true" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" placeholder="Department">
